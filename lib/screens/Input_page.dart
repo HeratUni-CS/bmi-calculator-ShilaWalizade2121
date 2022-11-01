@@ -17,9 +17,9 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender? selectGender;
-  int height = 160;
-  int weight = 60;
-  int age = 22;
+  int height = 165;
+  int weight = 65;
+  int age = 25;
 
   @override
   Widget build(BuildContext context) {
@@ -195,9 +195,11 @@ class _InputPageState extends State<InputPage> {
                             RoundIconButton(
                               icon: FontAwesomeIcons.plus,
                               onPress: () {
-                                setState() {
-                                  age++;
-                                }
+                                setState(
+                                  () {
+                                    age++;
+                                  },
+                                );
                               },
                             ),
                           ],

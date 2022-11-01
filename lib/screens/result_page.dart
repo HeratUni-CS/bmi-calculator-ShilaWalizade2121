@@ -35,9 +35,10 @@ class ResultsPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(resultText!.toUpperCase(), style: kResultTextStyle),
+                  Text(resultText.toString().toUpperCase(),
+                      style: kResultTextStyle),
                   Text(
-                    bmiResult!,
+                    bmiResult.toString(),
                     style: kBMITextStyle,
                   ),
                   Column(
@@ -47,7 +48,7 @@ class ResultsPage extends StatelessWidget {
                         style: kGrayBodyTextStyle,
                       ),
                       Text(
-                        '18.5-25 kg/m2',
+                        '18.5 - 25 kg/m2',
                         style: kBodyTextStyle,
                       ),
                     ],
@@ -55,7 +56,7 @@ class ResultsPage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(15),
                     child: Text(
-                      interpretation!,
+                      interpretation.toString(),
                       style: kBodyTextStyle,
                       textAlign: TextAlign.center,
                     ),

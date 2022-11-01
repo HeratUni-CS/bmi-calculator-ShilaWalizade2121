@@ -17,9 +17,9 @@ class Calculator {
   String getInterpretation() {
     if (_bmi < 18.5) {
       return ('It\'s good for you to eat more ');
-    } else if (_bmi >= 18 || _bmi < 25) {
+    } else if (_bmi >= 18 && _bmi < 25) {
       return ('You\'re Perfect!');
-    } else if (_bmi >= 25 || _bmi < 30) {
+    } else if (_bmi >= 25 && _bmi < 30) {
       return ('Think more about your health!');
     } else if (_bmi >= 30) {
       return ('You\'re in danger! Please exercise.');
@@ -31,9 +31,9 @@ class Calculator {
   String getResult() {
     if (_bmi < 18.5) {
       return 'Underweight';
-    } else if (_bmi >= 18 || _bmi < 25) {
+    } else if (_bmi >= 18 && _bmi < 25) {
       return 'Healthy weight!';
-    } else if (_bmi >= 25 || _bmi < 30) {
+    } else if (_bmi >= 25 && _bmi < 30) {
       return 'Overweight';
     } else if (_bmi >= 30) {
       return 'Obese';
